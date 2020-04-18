@@ -922,6 +922,12 @@ footer .page {
   .main-div {
     width: 100%;
   }
+  .dl-con-column {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   .center-box {
     width: 100%;
     margin-right: 0;
@@ -979,8 +985,13 @@ footer .page {
   }
   .dl-content {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     padding: 0;
+  }
+  .dl-cn-info {
+    width: 100%;
   }
   .left-border {
     flex-direction: column-reverse;
