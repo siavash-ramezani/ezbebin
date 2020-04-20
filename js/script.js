@@ -10,3 +10,12 @@ function Dropdown(e) {
     item.classList.toggle("hidden");
   });
 }
+let hamMenu = document.querySelector(".ham-menu");
+function hamburgerMenu() {
+  let hiddenDiv = document.querySelector(".ham-div");
+  if (hiddenDiv.style.display === "flex") {
+    hiddenDiv.style.display = "none";
+  } else {
+    hiddenDiv.style.display = "flex";
+  }
+}
