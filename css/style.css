@@ -867,6 +867,8 @@ footer .page {
   max-width: 100%;
 }
 .triangle-down {
+  position: relative;
+  top: 22px;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -887,6 +889,9 @@ footer .page {
   border-left: 2px solid #ffc107;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+.mobile-contents-last {
+  max-height: 60px;
 }
 .sticky-divs {
   flex-direction: column;
@@ -982,7 +987,49 @@ footer .page {
 
 /*  */
 /* stars */
-
+.star-box {
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.star {
+  position: relative;
+  display: block;
+  color: #851313;
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid #851313;
+  border-left: 10px solid transparent;
+  transform: rotate(35deg);
+}
+.star:before {
+  border-bottom: 8px solid #851313;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -4.5px;
+  left: -6.5px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.star:after {
+  position: absolute;
+  display: block;
+  color: #851313;
+  top: 0.3px;
+  left: -10.5px;
+  width: 0px;
+  height: 0px;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid #851313;
+  border-left: 10px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
 /*  */
 /* ----------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 920px) {
